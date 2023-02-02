@@ -30,6 +30,13 @@
                 <option value="crémeFraiche">Créme fraiche</option>
             </select><br>
             <br>
+        <label for="pizzatoppings">Pizzatoppings</label><br>
+            <input type="radio" id="vegan" name="vegan" value="vegan">
+                <label for="vegan">Vegan</label><br>
+            <input type="radio" id="vegatarisch" name="vegatarisch" value="vegatarisch">
+                <label for="vegatarisch">Vegatarisch</label><br>
+            <input type="radio" id="vlees" name="vlees" value="vlees">
+                <label for="vlees">Vlees</label><br>
     </form>
 </body>
 </html>
