@@ -40,17 +40,27 @@ $sql = "INSERT INTO pizza (Id
                             ,:chiliflakes
                             ,:zwartepeper);";
 
+// Zorgt ervoor dat de default values '' wordt als er niets ingevuld is
+// Bij de kruiden wordt er ipv een empty string, 'nee' als default value meegegeven als de checkboxes niet aangeklikt zijn
+$bodemformaat = (isset($_POST['bodemformaat'])) ? $_POST['bodemformaat'] : '';
+$saus = (isset($_POST['saus'])) ? $_POST['saus'] : '';
+$pizzatoppings = (isset($_POST['pizzatoppings'])) ? $_POST['pizzatoppings'] : '';
+$kruiden1 = (isset($_POST['kruiden1'])) ? $_POST['kruiden1'] : "nee";
+$kruiden2 = (isset($_POST['kruiden2'])) ? $_POST['kruiden2'] : "nee";
+$kruiden3 = (isset($_POST['kruiden3'])) ? $_POST['kruiden3'] : "nee";
+$kruiden4 = (isset($_POST['kruiden4'])) ? $_POST['kruiden4'] : "nee";
+
 // Maak de sql-query gereed om te worden afgevuurd op de mysql-database
 $statement = $pdo->prepare($sql);
 
 // De bindValue method bind de $_POST waarde aan de placeholder
-$statement->bindValue(':bodemformaat', $_POST['bodemformaat'], PDO::PARAM_STR);
-$statement->bindValue(':saus', $_POST['saus'], PDO::PARAM_STR);
-$statement->bindValue(':pizzatoppings', $_POST['pizzatoppings'], PDO::PARAM_STR);
-$statement->bindValue(':peterselie', $_POST['kruiden1'], PDO::PARAM_STR);
-$statement->bindValue(':oregano', $_POST['kruiden2'], PDO::PARAM_STR);
-$statement->bindValue(':chiliflakes', $_POST['kruiden3'], PDO::PARAM_STR);
-$statement->bindValue(':zwartepeper', $_POST['kruiden4'], PDO::PARAM_STR);
+$statement->bindValue(':bodemformaat', $bodemformaat, PDO::PARAM_STR);
+$statement->bindValue(':saus', $saus, PDO::PARAM_STR);
+$statement->bindValue(':pizzatoppings', $pizzatoppings, PDO::PARAM_STR);
+$statement->bindValue(':peterselie', $kruiden1, PDO::PARAM_STR);
+$statement->bindValue(':oregano', $kruiden2, PDO::PARAM_STR);
+$statement->bindValue(':chiliflakes', $kruiden3, PDO::PARAM_STR);
+$statement->bindValue(':zwartepeper', $kruiden4, PDO::PARAM_STR);
 
 // Voer de sql-query uit op de database
 $statement->execute();
