@@ -88,8 +88,9 @@ var_dump($result);
 <body>
     <h3>Wijzig het record</h3>
 
+    <a href="read.php">Pizza bestellijst</a>
     <form action="create.php" method="post">
-        <label for="bodemformaat">Bodemformaat</label><br>
+        <label for="bodemformaat" class="bold">Bodemformaat</label><br>
             <select name="bodemformaat" id="bodemformaat">
                 <option value="default">Maak je keuze</option>
                 <option value="20 centimeter">20 Centimeter</option>
@@ -99,7 +100,7 @@ var_dump($result);
                 <option value="40 centimeter">40 Centimeter</option>
             </select><br>
         <br>
-        <label for="saus">Saus</label><br>
+        <label for="saus" class="bold">Saus</label><br>
             <select name="saus" id="saus">
                 <option value="default">Maak je keuze</option>
                 <option value="tomatensaus">Tomatensaus</option>
@@ -109,7 +110,7 @@ var_dump($result);
                 <option value="crémeFraiche">Créme fraiche</option>
             </select><br>
         <br>
-        <label for="pizzatoppings">Pizzatoppings</label><br>
+        <label for="pizzatoppings" class="bold">Pizzatoppings</label><br>
             <input type="radio" id="vegan" name="pizzatoppings" value="vegan">
                 <label for="vegan">Vegan</label><br>
             <input type="radio" id="vegatarisch" name="pizzatoppings" value="vegatarisch">
@@ -117,14 +118,14 @@ var_dump($result);
             <input type="radio" id="vlees" name="pizzatoppings" value="vlees">
                 <label for="vlees">Vlees</label><br>
         <br>
-        <label for="kruiden">Kruiden</label><br>
-        <input type="checkbox" name="kruiden1" id="peterselie" value="ja">
+        <label for="kruiden" class="bold">Kruiden</label><br>
+            <input type="checkbox" name="kruiden1" id="peterselie" value="ja">
                 <label for="peterselie">Peterselie</label><br>
-        <input type="checkbox" name="kruiden2" id="oregano" value="ja">
+            <input type="checkbox" name="kruiden2" id="oregano" value="ja">
                 <label for="oregano">Oregano</label><br>
-        <input type="checkbox" name="kruiden3" id="chiliflakes" value="ja">
+            <input type="checkbox" name="kruiden3" id="chiliflakes" value="ja">
                 <label for="chiliflakes">Chili Flakes</label><br>
-        <input type="checkbox" name="kruiden4" id="zwartepeper" value="ja">
+            <input type="checkbox" name="kruiden4" id="zwartepeper" value="ja">
                 <label for="zwartepeper">Zwarte peper</label><br>
         <br>
         <input type="submit" value="Bestel">
