@@ -26,7 +26,7 @@
                 <option value="tomatensaus">Tomatensaus</option>
                 <option value="extraTomatensaus">Extra tomatensaus</option>
                 <option value="spicyTomatensaus">Spicy tomatensaus</option>
-                <option value="bbqSaus">BBQ saus</option>
+                <option value="bbqsaus">BBQ saus</option>
                 <option value="crémeFraiche">Créme fraiche</option>
             </select><br>
         <br>
@@ -38,15 +38,15 @@
             <input type="radio" id="vlees" name="pizzatoppings" value="vlees">
                 <label for="vlees">Vlees</label><br>
         <br>
-        <label for="Kruiden">Kruiden</label><br>
-            <input type="checkbox" name="peterselie" id="peterselie" value="peterselie">
+        <label for="kruiden">Kruiden</label><br>
+        <input type="checkbox" name="kruiden1" id="peterselie" value="ja">
                 <label for="peterselie">Peterselie</label><br>
-            <input type="checkbox" name="oregano" id="oregano" value="oregano">
+        <input type="checkbox" name="kruiden2" id="oregano" value="ja">
                 <label for="oregano">Oregano</label><br>
-            <input type="checkbox" name="chiliflakes" id="chiliflakes" value="chiliflakes">
+        <input type="checkbox" name="kruiden3" id="chiliflakes" value="ja">
                 <label for="chiliflakes">Chili Flakes</label><br>
-            <input type="checkbox" name="zwartepeper" id="zwartepeper" value="zwartepeper">
-                <label for="zwartepaper">Zwarte peper</label><br>
+        <input type="checkbox" name="kruiden4" id="zwartepeper" value="ja">
+                <label for="zwartepeper">Zwarte peper</label><br>
         <br>
         <input type="submit" value="Bestel">
     </form>
