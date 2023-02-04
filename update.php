@@ -82,7 +82,8 @@ var_dump($result);
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
-    <title>PDO CRUD</title>
+    <title>Opdracht02 PDO-CRUD</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <h3>Wijzig het record</h3>

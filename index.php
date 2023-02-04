@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Opdracht02 PDO-CRUD</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <h2>Maak je eigen pizza</h2>
